@@ -1,0 +1,5 @@
+*.d.ts
+*.js
+!m.d.ts
+dist
+node_modules

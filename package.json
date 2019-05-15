@@ -1,0 +1,30 @@
+{
+  "name": "bizarre",
+  "version": "0.0.1",
+  "description": "bizarre package",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "ts-node ./test/commom.spec.ts",
+    "build": "tsc -d ./src/index.ts --outDir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KawayAlpaka/bizarre.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KawayAlpaka/bizarre/issues"
+  },
+  "homepage": "https://github.com/KawayAlpaka/bizarre#readme",
+  "devDependencies": {
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
