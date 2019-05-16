@@ -1,2 +1,7 @@
-import * as bizarre from "../src/index";
-bizarre.Common.helloWorld();
+import * as bizarre from '../src';
+
+describe('common:helloWorld', () => {
+  test('helloWorld()', () => {
+    expect(bizarre.Common.helloWorld()).toBe("hello world")
+  })
+});
