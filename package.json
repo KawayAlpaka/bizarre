@@ -2,13 +2,13 @@
   "name": "bizarre",
   "version": "0.0.1",
   "description": "bizarre package",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "ts-node ./test/commom.spec.ts",
-    "build": "tsc -d ./src/index.ts --outDir dist"
+    "test": "ts-node ./test/node.spec.ts",
+    "build": "tsc -d ./src/index.ts --outDir lib"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/KawayAlpaka/bizarre#readme",
   "devDependencies": {
+    "@types/node": "^12.0.2",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5"
   },
