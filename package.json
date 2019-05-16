@@ -39,8 +39,7 @@
     },
     "collectCoverage": true,
     "collectCoverageFrom":[
-      "src/common/**/*.ts",
-      "src/node/**/*.ts"
+      "src/**/*.ts"
     ],
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions": [
