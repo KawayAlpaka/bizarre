@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "jest --verbose",
-    "build": "tsc -d ./src/index.ts --outDir lib"
+    "build": "tsc -d ./src/index.ts --outDir lib",
+    "start": "jest --watch --collectCoverage=false"
   },
   "repository": {
     "type": "git",
