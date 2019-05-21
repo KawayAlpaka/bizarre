@@ -1,4 +1,4 @@
-import * as bizarre from '../src';
+import bizarre from '../src';
 
 describe('common:helloWorld', () => {
   test('helloWorld()', () => {

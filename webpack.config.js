@@ -4,6 +4,9 @@ module.exports = {
   mode:'production',
   entry: './src/index.ts',
   devtool: 'source-map',
+  devServer: {
+    open: true
+  },
   module: {
     rules: [
       {
