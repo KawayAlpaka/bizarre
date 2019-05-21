@@ -2,7 +2,11 @@ const path = require('path');
 
 module.exports = {
   mode:'production',
-  entry: './src/index.ts',
+  entry: {
+    'bizarre': './src/index.ts',
+    'bizarre-web': './src/index-web.ts',
+    'bizarre-node': './src/index-node.ts'
+  },
   devtool: 'source-map',
   devServer: {
     open: true
@@ -20,7 +24,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ]
   },
   output: {
-    filename: 'bizarre.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   }
 };
