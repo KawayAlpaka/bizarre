@@ -1,6 +1,7 @@
 *.d.ts
-*.js
+/src/*.js
+/lib
+/dist
 !m.d.ts
-dist
 node_modules
 /coverage
