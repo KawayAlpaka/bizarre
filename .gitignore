@@ -5,3 +5,4 @@
 !m.d.ts
 node_modules
 /coverage
+/docs-src
