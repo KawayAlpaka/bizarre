@@ -12,7 +12,9 @@
     "build:lib": "tsc -d ./src/index.ts --outDir lib",
     "build:bundle": "webpack",
     "start": "jest --watch --collectCoverage=false",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server",
+    "docs:dev": "vuepress dev docs-src",
+    "docs:build": "vuepress build docs-src"
   },
   "repository": {
     "type": "git",
@@ -34,7 +36,8 @@
     "typescript": "^3.4.5",
     "webpack": "^4.32.0",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.4.1"
+    "webpack-dev-server": "^3.4.1",
+    "vuepress": "^0.14.11"
   },
   "files": [
     "dist",
