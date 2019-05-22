@@ -6,10 +6,11 @@ const bizarre = {
   Web,
   Common,
   Node
-}
+};
 
-if(!(typeof window == "undefined")){
-  window["Bizarre"] = bizarre;
-}
-
+export {
+  Web,
+  Common,
+  Node
+};
 export default bizarre;

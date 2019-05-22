@@ -4,6 +4,10 @@ import * as Node from "./node";
 const bizarre = {
   Common,
   Node
-}
+};
 
+export {
+  Common,
+  Node
+};
 export default bizarre;

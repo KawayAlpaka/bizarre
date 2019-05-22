@@ -6,8 +6,8 @@ const bizarre = {
   Common
 }
 
-if(!(typeof window == "undefined")){
-  window["Bizarre"] = bizarre;
-}
-
+export {
+  Web,
+  Common
+};
 export default bizarre;

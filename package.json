@@ -1,6 +1,6 @@
 {
   "name": "bizarre",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "bizarre package",
   "main": "lib/index.js",
   "directories": {
