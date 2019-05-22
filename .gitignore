@@ -1,0 +1,7 @@
+*.d.ts
+/src/*.js
+/lib
+/dist
+!m.d.ts
+node_modules
+/coverage
