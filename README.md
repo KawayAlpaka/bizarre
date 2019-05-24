@@ -24,6 +24,9 @@ console.log(helloWorld());
 ```
 [更多应用场景](https://kawayalpaka.github.io/bizarre/zh/start.html) 
 
-## API
+## Api
+Api简单划分为Common（通用）、Web（浏览器环境）、Node（nodejs环境）    
+目前Api数量
+Common:`0`个，Web:`2`个，Node: `0`个    
 [API文档](https://kawayalpaka.github.io/bizarre/zh/api.html) 
 
