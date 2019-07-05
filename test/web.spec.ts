@@ -52,4 +52,13 @@ describe('web:get-img', () => {
     expect(img.type).toEqual("svg");
     expect(res).toEqual(exp);
   });
+  test('Hash(getHash)', () => {
+    location.hash = "a=a1&b=b1";
+    var hash = Bizarre.Web.Hash.getHash();
+    expect(hash).toEqual({a:"a1",b:"b1"});
+  });
+  test('Hash(setHash)', () => {
+    Bizarre.Web.Hash.setHash({a:"a1",b:"b1"});
+    expect(location.hash).toEqual("#a=a1&b=b1");
+  });
 });
