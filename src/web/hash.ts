@@ -11,14 +11,21 @@ class Hash {
   }
 
   static setHash(obj:any,except?:RegExp):any{
+    var _obj = Object.assign(Hash.getHash(),obj);
     var _arr = [];
-    for (let key in obj) {
+    for (let key in _obj) {
       if (except && key.match(except)) {
         continue;
       }
-      _arr.push(key + "=" + encodeURIComponent(obj[key]));
+      _arr.push(key + "=" + encodeURIComponent(_obj[key]));
     }
     location.hash = _arr.join("&");
+    // if(location.hash.replace("#","").length > 0){
+    //   location.hash = location.hash + "&" + _arr.join("&");
+    // }else{
+    //   location.hash = _arr.join("&");
+    // }
+    
   }
 };
 

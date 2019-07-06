@@ -57,8 +57,13 @@ describe('web:get-img', () => {
     var hash = Bizarre.Web.Hash.getHash();
     expect(hash).toEqual({a:"a1",b:"b1"});
   });
-  test('Hash(setHash)', () => {
+  test('Hash(setHash1)', () => {
     Bizarre.Web.Hash.setHash({a:"a1",b:"b1"});
     expect(location.hash).toEqual("#a=a1&b=b1");
+  });
+  test('Hash(setHash2)', () => {
+    location.hash = "o=o1";
+    Bizarre.Web.Hash.setHash({a:"a1",b:"b1"});
+    expect(location.hash).toEqual("#o=o1&a=a1&b=b1");
   });
 });
